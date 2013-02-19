@@ -1,18 +1,18 @@
 {
-	"name": 				"Instagram",
-	"identifier":		"me.danpalmer.River.plugins.Instagram",
-	"description":  "LOL Hipsters.",
-	"titleImage":		"instagram.png",
+	"name": 				"GitHub",
+	"identifier":		"me.danpalmer.River.plugins.GitHub",
+	"description":  "Get notifications from your GitHub account.",
+	"titleImage":		"github.png",
 	"developer": {
 		"name":				"Dan Palmer",
 		"email":			"dan.palmer@me.com",
-		"website":		"http://danpalmer.me/River/Instagram"
+		"website":		"http://danpalmer.me/River/GitHub"
 	},
 	"icons": {
-		"small":			"icons/instagram16.png",
-		"large":			"icons/instagram32.png"
+		"small":			"icons/github16.png",
+		"large":			"icons/github32.png"
 	},
 	"providers": {
-		"stream": "Instagram.js"
+		"stream": "GitHub.coffee"
 	}
 }
