@@ -41,7 +41,6 @@ class GitHub
 	# Finally calls *createAccount* on the delegate passing in the user info.
 	authenticate: (params) ->
 		@exchange params.code, (err, token) =>
-			console.log(token)
 			if not token
 				return console.log(err)
 			@user token, (err, user) =>
@@ -69,7 +68,6 @@ class GitHub
 				return callback('Failed to parse JSON', null)
 			notifications = []
 			for notification in response
-				console.log notification.subject.title
 				n = new Notification()
 				n.subject = notification.repository.full_name
 				n.action = notification.subject.title
