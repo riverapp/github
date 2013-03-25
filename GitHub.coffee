@@ -68,7 +68,7 @@ class GitHub
 				return callback('Failed to parse JSON', null)
 			notifications = []
 			for notification in response
-				n = new Notification()
+				n = new Text()
 				n.text = "<b>#{notification.repository.full_name}</b> #{notification.subject.title}"
 				n.notification = n.text
 				n.id = notification.id
