@@ -69,8 +69,8 @@ class GitHub
 			notifications = []
 			for notification in response
 				n = new Notification()
-				n.subject = notification.repository.full_name
-				n.action = notification.subject.title
+				n.text = "<b>#{notification.repository.full_name}</b> #{notification.subject.title}"
+				n.notification = n.text
 				n.id = notification.id
 				notifications.push(n)
 			callback(null, notifications)
